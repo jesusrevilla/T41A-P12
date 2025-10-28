@@ -1,5 +1,9 @@
 
 -- INNER JOIN: solo coincidencias
-SELECT customers.id AS customer_id, customers.name, customers.country, orders.id AS order_id, orders.product
-FROM customers
-INNER JOIN orders ON customers.id = orders.customer_id;
+SELECT 
+  c.id,
+  c.name,
+  o.product
+FROM customers AS c
+INNER JOIN orders AS o
+  ON c.id = o.customer_id;
