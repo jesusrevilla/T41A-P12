@@ -1,2 +1,2 @@
-SELECT c.name, o.product FROM orders o LEFT JOIN customers c
+SELECT c.name, o.product FROM customers c LEFT JOIN orders o
   ON c.id = o.customer_id;
