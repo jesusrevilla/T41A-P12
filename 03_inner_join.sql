@@ -1,5 +1,4 @@
-
 -- INNER JOIN: solo coincidencias
-SELECT c.name, p.product_name
+SELECT c.name, o.product
 FROM customers c
-INNER JOIN products p ON c.id = p.customer_id;
+INNER JOIN orders o ON c.id = o.customer_id;
