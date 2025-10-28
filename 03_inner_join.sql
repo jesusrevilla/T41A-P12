@@ -1,1 +1,2 @@
-SELECT * FROM customers INNER JOIN orders;
+SELECT c.names, o.product FROM customers c INNER JOIN orders o
+  ON c.id = o.customer_id;
