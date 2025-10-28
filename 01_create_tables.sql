@@ -1,4 +1,3 @@
-
 -- Crear tablas
 CREATE TABLE customers (
     id INT PRIMARY KEY,
@@ -9,6 +8,6 @@ CREATE TABLE customers (
 CREATE TABLE orders (
     id INT PRIMARY KEY,
     customer_id INT,
-    product VARCHAR(50)
+    product VARCHAR(50),
+    FOREIGN KEY (customer_id) REFERENCES customers(id)
 );
-
