@@ -1,1 +1,1 @@
-SELECT * FROM customers full outer join orders;
+SELECT * FROM customers full outer join orders
