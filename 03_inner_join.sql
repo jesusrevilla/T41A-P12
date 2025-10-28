@@ -1,4 +1,3 @@
--- INNER JOIN: solo coincidencias
 SELECT 
     customers.name,
     orders.product
