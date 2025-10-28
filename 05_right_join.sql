@@ -1,3 +1,1 @@
--- RIGHT JOIN: todos los pedidos, aunque no tengan cliente
-SELECT * FROM orders
-  right join customers;
+SELECT * FROM orders right join customers;
