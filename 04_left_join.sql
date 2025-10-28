@@ -1,2 +1,2 @@
 -- LEFT JOIN: todos los clientes, aunque no tengan pedidos
-SELECT * FROM orders o LEFT JOIN customers c ON o.customer_id=c.id;
+SELECT c.name, o.id FROM orders o LEFT JOIN customers c ON c.id=o.customer_id;
