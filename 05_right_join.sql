@@ -1,2 +1,7 @@
 -- RIGHT JOIN: todos los pedidos, aunque no tengan cliente
-SELECT * FROM orders o RIGHT JOIN customers c ON o.customer_id=c.id;
+SELECT 
+    customers.name,
+    orders.product
+FROM customers
+RIGHT JOIN orders
+    ON customers.id = orders.customer_id;
