@@ -1,1 +1,1 @@
-SELECT * FROM orders right join customers
+SELECT * FROM orders RIGHT JOIN customers;
