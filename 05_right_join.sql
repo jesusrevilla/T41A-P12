@@ -1,1 +1,2 @@
-SELECT * FROM orders RIGHT JOIN customers;
+SELECT c.names, o.product FROM customers c RIGHT JOIN orders o
+  ON c.id = o.customer_id;
