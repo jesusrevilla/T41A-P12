@@ -1,10 +1,6 @@
 
 -- INNER JOIN: solo coincidencias
-SELECT
-  cus.name,
-  ord.product
+SELECT cus.name, ord.product
 FROM customers AS cus
-INNER JOIN orders AS ord
-  ON ord.customer_id = cus.id
-ORDER BY cus.name, ord.id;
+INNER JOIN orders AS ord ON ord.customer_id = cus.id ORDER BY cus.name, ord.id;
 
