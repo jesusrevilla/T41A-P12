@@ -1,4 +1,5 @@
 
 -- INNER JOIN: solo coincidencias
-SELECT * FROM customers;
+SELECT customers.name,orders.product FROM customers 
+inner join orders on orders.customer_id=customers.id;
 
