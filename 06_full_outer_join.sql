@@ -1,2 +1,4 @@
--- FULL OUTER JOIN: todos los clientes y pedido
-SELECT * FROM customers;
+SELECT c.name, p.product
+FROM customers c
+FULL OUTER JOIN products p
+    ON c.customer_id = p.customer_id;

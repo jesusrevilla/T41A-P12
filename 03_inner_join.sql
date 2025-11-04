@@ -1,4 +1,4 @@
-
--- INNER JOIN: solo coincidencias
-SELECT * FROM customers;
-
+SELECT c.name, p.product
+FROM customers c
+INNER JOIN products p
+    ON c.customer_id = p.customer_id;
