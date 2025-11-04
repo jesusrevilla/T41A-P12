@@ -1,14 +1,14 @@
 
 -- Crear tablas
 CREATE TABLE customers (
-    id INT PRIMARY KEY,
-    name VARCHAR(50),
-    country VARCHAR(50)
+    customer_id   INTEGER PRIMARY KEY,
+    name          TEXT    NOT NULL
 );
 
+-- Pedidos
 CREATE TABLE orders (
-    id INT PRIMARY KEY,
-    customer_id INT,
-    product VARCHAR(50)
+    order_id     INTEGER PRIMARY KEY,
+    customer_id  INTEGER NOT NULL REFERENCES customers(customer_id),
+    order_date   DATE,
+    amount       NUMERIC(12,2)
 );
-
