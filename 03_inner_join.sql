@@ -1,12 +1,4 @@
--- INNER JOIN: solo clientes con pedidos
-SELECT
-    c.customer_id,
-    c.name,
-    o.order_id,
-    o.order_date,
-    o.amount
-FROM customers AS c
-INNER JOIN orders AS o
-    ON o.customer_id = c.customer_id
-ORDER BY c.customer_id, o.order_id;
-
+SELECT c.name, p.product
+FROM customers c
+INNER JOIN products p
+    ON c.customer_id = p.customer_id;
